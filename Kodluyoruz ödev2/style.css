@@ -1,0 +1,119 @@
+body{
+  background-image: url(https://i.hizliresim.com/WTWtA7.png);
+}
+.main{
+    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.alt{
+  color: rgba(95, 95, 102, 0.5);
+  font-size: 20px;
+  margin-left: 65px;
+  text-decoration: none;
+}
+.alt a{text-decoration: none;}
+.yazılar{  
+  border: 1px solid black;
+    border-radius: 12px;
+    display: flex;  
+   position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.5);}
+
+    ::placeholder {
+      color: rgba(85, 87, 88, 0.3);
+    }
+p{
+  color: rgba(95, 95, 102, 0.7);
+  font-size: 23px;
+  margin-top: 10px;
+  margin-left: 80px;  
+}
+.button{
+  margin: 10px 50px;
+  height: 50px;
+  width: 80%;
+  border: 1px solid rgb(179, 176, 176);
+  border-radius: 25px;
+  background-color: rgb(231, 148, 227);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.in input {
+  color: rgba(240, 235, 235,0.2);
+}
+.text input{
+  width: 70%;
+  float: left;
+  margin: 10px 50px;
+  height: 45px;
+  border-radius: 25px;
+  border: 1px solid rgb(179, 176, 176); 
+  background-color: rgb(240, 235, 235);
+  font-size: 20px;
+  padding-left: 30px;
+  border: none;
+
+}
+.yan{
+  color: purple;
+  float: left;
+  margin-top: 10px;
+  border-radius: 100%;
+  border: 2px solid rgba(77, 74, 74, 0.5);
+  padding-top: 10px;
+  width: 30px;
+  height: 35px;
+  padding-left: 10px;}
+.gog{   
+   color: red;
+  float: left;
+  margin: 10px 25px;
+  border-radius: 100%;
+  border: 2px solid rgba(77, 74, 74, 0.5);
+  padding-top: 10px;
+  width: 25px;
+  height: 25px;
+  padding: 10px 10px;}
+.face{
+  color: blue;
+  float: left;
+  margin-top: 10px;
+  border-radius: 100%;
+  border: 2px solid rgba(77, 74, 74, 0.5);
+  padding-top: 10px;
+  width: 30px;
+  height: 35px;
+  padding-left: 10px;
+
+}
+.üst{
+  margin-top: 50px;
+}
+.icon{
+  width: 100%;
+  height: 60px;
+  margin: 0 90px;
+  font-size: 25px;}
+
+.resim{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+.resim img{   
+  width: 30%;
+  height: 80px;
+}

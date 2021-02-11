@@ -1,0 +1,97 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <div class="container">
+            <table class="table table-bordered table-danger">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>İsim</th>
+                        <th>Tiyatroya Gelecek mi?</th>
+                        <th>Sıra Numarası</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="nameinput">Cihan Acay </td>
+                        <td><input type="checkbox" class="kontrol" id="kontrol" /></td>
+                        <td><input type="number" id="sıra_no" disabled class="sıra" /></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="nameinput">Duran Ünverdi </td>
+                        <td><input type="checkbox" class="kontrol" id="kontrol" /></td>
+                        <td><input type="number" id="sıra_no" disabled class="sıra" /></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="nameinput">Ömer Gülçiçek </td>
+                        <td><input type="checkbox" class="kontrol" id="kontrol" /></td>
+                        <td><input type="number" id="sıra_no" disabled class="sıra" /></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="nameinput">Kevser Büyükaydın </td>
+                        <td><input type="checkbox" class="kontrol" id="kontrol" /></td>
+                        <td><input type="number" id="sıra_no" disabled class="sıra" /></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th>Id</th>
+                    <th>İsim</th>
+                    <th>Tiyatroya Gelecek mi?</th>
+                    <th>Sıra Numarası</th>
+                </tfoot>
+            </table>
+            <button id="kayıt" type="button" class="btn btn-primary " style=" margin-left: 94%">
+                Kaydet
+            </button>
+            <h2 hidden id="baslik">Gidenlerin Listesi</h2>
+            <table hidden id="tablo" class="table table-bordered table-danger ">
+                <thead>
+                    <tr>
+                        <th>İsim</th>
+                        <th>Sıra Numarası</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td hidden class="sonuc"></td>
+                        <td hidden class="sonuc1"> </td>
+                    </tr>
+                    <tr>
+                        <td hidden class="sonuc"></td>
+                        <td hidden class="sonuc1"> </td>
+                    </tr>
+                    <tr>
+                        <td hidden class="sonuc"></td>
+                        <td hidden class="sonuc1"> </td>
+                    </tr>
+                    <tr>
+                        <td hidden class="sonuc"></td>
+                        <td hidden class="sonuc1"> </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th>İsim</th>
+                    <th>Sıra Numarası</th>
+                </tfoot>
+            </table>
+        </div>
+        <script src="dosya.js"></script>
+    </body>
+
+    </html>

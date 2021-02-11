@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form input {
+        margin-bottom: 10px;
+        height: 30px;
+        min-width: 100px;
+        border-radius: 5px 10px;
+        padding-left: 10px;
+
+    }
+
+    .ortalama {
+        margin-top: 20%;
+        margin-left: 40%;
+    }
+
+    .yanlis {
+        display: none;
+    }
+
+    .dogru {
+        display: none;
+    }
+
+    .yanlis1 {
+        background: red;
+    }
+
+    .dogru1 {
+        background: green;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="ortalama">
+            <form class="form">
+                <input id="ad" type="text" placeholder="Ad"><br>
+                <input id="soyad" type="text" placeholder="Soyad"><br>
+                <input id="kullaniciadi" type="text" placeholder="Kullanıcı adı"><br>
+                <input id="mail" type="email" placeholder="E-Mail"><br>
+                <input id="sifre" type="password" placeholder="şifre"><br>
+                <input id="tsifre" type="password" placeholder="şifre tekrar"><br>
+                <button type="button" onclick="deneme()">Gönder</button>
+
+            </form>
+        </div>
+    </div>
+    <div id="yanlis" class="yanlis">
+        <p>Parolanız 8 karakterden az yada eşleşmiyor</p>
+    </div>
+
+    <div id="dogru" class="dogru">
+        <p id="aciklama"></p>
+    </div>
+</body>
+
+</html>
+<script>
+    var add = document.getElementById("ad");
+    var soyy = document.getElementById("soyad");
+    var pass = document.getElementById("sifre");
+    var pass2 = document.getElementById("tsifre");
+    var p = document.getElementById("aciklama");
+
+    function deneme() {
+        document.getElementById("yanlis").className = "yanlis";
+        document.getElementById("dogru").className = "dogru";
+        if (pass.value != pass2.value || pass.value.length < 8) {
+            document.getElementById("yanlis").className = "yanlis1";
+            console.log("Yanlışş");
+        } else {
+            p.innerHTML = "Hoşgeldin  " + document.getElementById("kullaniciadi").value;
+            document.getElementById("dogru").className = "dogru1";
+            console.log("doğru");
+        }
+    };
+
+    soyy.addEventListener("keyup", function () {
+        document.getElementById("kullaniciadi").value = "@" + add.value + soyy.value;
+
+    });
+    add.addEventListener("keyup", function () {
+        document.getElementById("kullaniciadi").value = "@" + add.value + soyy.value;
+
+    });
+</script>

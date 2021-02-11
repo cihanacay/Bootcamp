@@ -1,0 +1,172 @@
+.body{
+    position: relative;
+    width: 1600px;
+    height: 920px;
+}
+:root{
+    --button-color:#fc569a;
+}
+.main{
+    position: absolute;
+    width: 1600px;
+    height: 920px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid red;
+    
+    &__logo a{
+        position: absolute;
+        width: 95.25px;
+        height: 40.61px;
+        left: 55.94px;
+        top: 37px;
+        font-family: Circular Std;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 160%;
+        letter-spacing: -0.02em;
+        color: #0A1B32;
+        text-decoration: none;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 100%;
+            margin-top: 28px;
+            margin-left: 3px;
+            background: violet;
+        }
+
+        
+    }
+    &__nav {   
+        position: absolute;
+        top: 48px;
+        display: block;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #1B0A42;
+      
+        &__home {
+            position: absolute;
+            left: 272.76px;
+        } 
+        &__about {
+            position: absolute;
+            left: 355.76px;
+        }   
+        &__blog{
+            position: absolute;
+            left: 439.76px;
+            
+        } 
+        &__contact{
+            position: absolute;
+            left: 510.76px;
+        } 
+        &__signin{
+            position: absolute;
+            left: 1320.96px;
+            width: 58px;
+            height: 24px;
+        }
+        &__signup{  
+            position: absolute;
+            width: 120px;
+            height: 59.65px;
+            left: 1412.26px;
+            top: -18px;
+            background: var(--button-color);
+            border-radius: 6px;          
+           
+        }
+        &__signup a{
+            position: absolute;
+            width: 58px;
+            height: 24px;
+            left: 31.26px;
+            top:18px;            
+            color: #FFFFFF;
+        }
+
+    }
+    &__section{
+        position: absolute;
+        left: 200px;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: 0.02em;
+        &__sag span{   
+            position: absolute;
+            width: 495px;
+            height: 152px;      
+            top: 280.71px;
+            font-family: Ramaraja;            
+            font-size: 62px;
+            line-height: 76px;
+            color: #1B0A42;
+        }
+        &__sag p{
+            position: absolute;
+            width: 581.49px;
+            height: 96px;
+            top: 442.71px;
+            font-family: Roboto;
+            font-size: 20px;
+            line-height: 32px;
+            /* or 160% */
+
+            color: #9A9A9A;
+
+        }  
+        &__sag img{
+            position: absolute;
+            width: 778px;
+            height: 526px;
+            left: 600px;
+            top: 205px;
+
+        }   
+        &__sag {
+            position: absolute;
+            &__button{
+                position: absolute;
+                width: 152px;
+                height: 63.82px;
+                top: 588.71px;
+
+                background:var(--button-color);
+                border-radius: 6px;
+            }
+            &__button a{
+                position: absolute;
+                width: 87.57px;
+                height: 27.82px;
+                left: 32.21px;
+                top: 18.71px;
+                
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 32px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #FFFFFF;
+            }
+           
+
+        }
+     
+
+
+
+    }
+ }
